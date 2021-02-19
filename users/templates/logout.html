@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}<title>LogOed out</title>{% endblock title %}
+    {% block content %}
+            <div class="mt-5 container">
+            <h3>You have Successfully Logged Out!</h3>
+            </div>
+            <div class="container">
+                <a href="{% url 'users:login' %}"><button type="submit" class="btn btn-info col-lg-3 mt-4">Click Here To Login Again!</button></a>
+            </div>
+
+
+    {% endblock content%}
